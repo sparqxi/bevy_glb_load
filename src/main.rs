@@ -34,16 +34,16 @@ fn setup(
     mut materials: ResMut<Assets<StandardMaterial>>,
 ) {
     commands.insert_resource(Animations(vec![
-        asset_server.load("Rover.glb#Animation2"),
-        asset_server.load("Rover.glb#Animation1"),
-        asset_server.load("Rover.glb#Animation0"),
-        asset_server.load("Rover.glb#Animation3"),
-        asset_server.load("Rover.glb#Animation4"),
-        asset_server.load("Rover.glb#Animation5"),
-        asset_server.load("Rover.glb#Animation6"),
-        asset_server.load("Rover.glb#Animation7"),
-        asset_server.load("Rover.glb#Animation8"),
-        asset_server.load("Rover.glb#Animation9"),
+        asset_server.load("Fox.glb#Animation2"),
+        asset_server.load("Fox.glb#Animation1"),
+        asset_server.load("Fox.glb#Animation0"),
+        // asset_server.load("Fox.glb#Animation3"),
+        // asset_server.load("Fox.glb#Animation4"),
+        // asset_server.load("Fox.glb#Animation5"),
+        // asset_server.load("Fox.glb#Animation6"),
+        // asset_server.load("Fox.glb#Animation7"),
+        // asset_server.load("Fox.glb#Animation8"),
+        // asset_server.load("Fox.glb#Animation9"),
     ]));
     //camera
     commands.spawn(Camera3dBundle {
@@ -70,7 +70,7 @@ fn setup(
     });
     //Fox
     commands.spawn(SceneBundle {
-        scene: asset_server.load("Rover.glb#Scene0"),
+        scene: asset_server.load("Fox.glb#Scene0"),
         transform:Transform::from_scale(Vec3::new(30.0    , 30.0, 30.0)),
         ..default()
     });
