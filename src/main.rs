@@ -71,7 +71,7 @@ fn setup(
     //Fox
     commands.spawn(SceneBundle {
         scene: asset_server.load("Fox.glb#Scene0"),
-        transform:Transform::from_scale(Vec3::new(30.0    , 30.0, 30.0)),
+        // transform:Transform::from_scale(Vec3::new(30.0    , 30.0, 30.0)),
         ..default()
     });
     //plan
