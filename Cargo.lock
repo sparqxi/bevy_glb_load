@@ -892,6 +892,8 @@ name = "bevy_test"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "wasm-bindgen",
+ "wgpu",
 ]
 
 [[package]]
